@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="entity.Students" table="STUDENTS">
+
+        <id name="sid" type="java.lang.String" length="8"><!-- 主键是sid，字段名sid ，长度8位-->
+            <generator class="assigned"/><!-- 手动指定 -->
+        </id>
+        <property name="sname" type="java.lang.String"/>
+        <property name="gender" type="java.lang.String"/>
+         <property name="birthday" type="date"/>
+          <property name="address" type="java.lang.String"/>
+    </class>
+
+</hibernate-mapping>

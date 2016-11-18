@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="entity.EmployeeWork" table="EMPLOYEEWORK">
+
+        <id name="eid" type="java.lang.String" length="8"><!-- 主键是eid，字段名eid ，长度8位-->
+            <generator class="assigned"/><!--自动-->
+        </id>
+        <property name="enumb" type="java.lang.String"/>
+        <property name="ename" type="java.lang.String"/>
+        <property name="eworktime" type="java.lang.String"/>
+        <property name="eworkhours" type="java.lang.String"/>
+        <property name="eworkcity" type="java.lang.String"/>
+         <property name="eworkday" type="date"/>
+         <property name="eworklocation" type="java.lang.String"/>
+          <property name="eworkcontent" type="java.lang.String"/>
+    </class>
+
+</hibernate-mapping>

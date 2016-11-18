@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="entity.EmployeeSupply" table="EMPLOYEESUPPLY">
+
+        <id name="sid" type="java.lang.String" length="8"><!-- 主键是sid，字段名sid ，长度8位-->
+            <generator class="assigned"/><!-- 手动指定 -->
+        </id>
+        <property name="sreimburse" type="java.lang.Integer"/>
+        <property name="snumbs" type="java.lang.Integer"/>
+        <property name="stimes" type="java.lang.Integer"/>
+        <property name="scooperate" type="java.lang.String"/>
+        <property name="senum" type="java.lang.String"/>
+        <property name="sename" type="java.lang.String"/>
+        <property name="sday" type="date"/>
+        <property name="sholiday" type="java.lang.String"/>
+        <property name="sreason" type="java.lang.String"/>
+    </class>
+
+</hibernate-mapping>
